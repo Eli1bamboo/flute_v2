@@ -1,0 +1,19 @@
+// RESETS
+a{
+    text-decoration: none !important;
+}
+
+ul{
+    list-style: none;
+}
+
+// COLORS
+
+$chery-red: #e42612;
+
+// ANIMATION
+.loading{
+    display: none;
+    margin-top: 20px;
+    color: white;
+}

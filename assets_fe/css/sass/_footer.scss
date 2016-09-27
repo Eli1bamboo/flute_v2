@@ -1,0 +1,54 @@
+footer{
+    background: #e6e7e8;
+    border-top: 1px solid #d1d3d4;
+    margin-top: 30px;
+    padding: 20px 0;
+
+    .container{
+        .oficial{
+            padding-top: 4%;
+            p{
+                font-size: 13px;
+                color: black;
+                font-family: 'Raleway-Medium';
+                line-height: 13px;
+            }
+        }
+
+        .logo{
+            a{
+                display: inline-block;
+            }
+        }
+
+        .social{
+            text-align: right;
+            padding-top: 3%;
+
+            a{
+                display: inline-block;
+                color: black;
+                i{
+                    -webkit-transition: all 0.25s ease-in-out;
+                    -moz-transition: all 0.25s ease-in-out;
+                    -ms-transition: all 0.25s ease-in-out;
+                    -o-transition: all 0.25s ease-in-out;
+                    transition: all 0.25s ease-in-out;
+                }
+                
+                &:hover{
+                    .fa-circle{
+                        color: white;
+                    }
+                    .fa-facebook-f{
+                        color: $chery-red;
+                    }
+                }
+                p{
+                    float: left;
+                    line-height: 40px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,148 @@
+header{
+    text-align: right;
+
+    .container{
+        position: relative;
+
+        #show-nav{
+            display: none;
+            cursor: pointer;
+            margin: 20px auto;
+
+            i{
+                font-size: 30px;
+                color: black;
+            }
+        }
+
+        .logo{
+            background: white;
+
+            a{
+                float: left;
+            }
+        }
+
+        .contact{
+            border-bottom:1px solid #d1d3d4;
+            padding: 10px 15px ;
+
+            address{
+                display: inline-block;
+                margin: 0 8% 0 0;
+
+                &:last-child{
+                    margin: 0;
+                }
+                p{
+                    float: left;
+                    line-height: 30px;
+                    color: black;
+                    font-size: 16px;
+                    font-family: 'Raleway-Medium';
+                    margin: 0;
+                }
+
+                i{
+                    float: left;
+                    line-height: 30px;
+                    font-size: 30px;
+                    color: #383837;
+                    margin: 0 10px 0 0;
+                }
+            }
+
+
+            a{
+                float: left;
+                line-height: 30px;
+                font-size: 16px;
+                font-family: 'Raleway-Medium';
+                text-transform: uppercase;
+                color: $chery-red;
+            }
+        }
+
+        .main-nav{
+
+            div{
+                display: inline-block;
+                padding: 4% 2%;
+                position: relative;
+
+                &:last-child{
+                    padding-right: 0;
+                }
+
+                .sub-nav{
+                    display: none;
+                    padding: 15px;
+                    position: absolute;
+                    z-index: 9999;
+                    background: white;
+                    left: 0;
+                    top: 100%;
+                    width: 100%;
+                    border-bottom: 4px solid $chery-red;
+
+                    ul{
+                        padding: 0;
+                        li{
+                            margin: 20px 0;
+                            text-align: left;
+
+                            a{
+                                line-height: 16px;
+                                font-size: 13px;
+                                font-family: 'Raleway-Medium';
+                                text-transform: uppercase;
+                                color: black;
+
+                                &:hover{
+                                    color: $chery-red;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                a{
+                    display: block;
+
+                    &#hide-nav{
+                        display: none;
+                        cursor: pointer;
+
+                        span{
+                            i{
+                                font-size: 30px;
+                                color: $chery-red;
+                            }
+                        }
+                    }
+                    span{
+                        float: left;
+                        line-height: 16px;
+                        font-size: 16px;
+                        font-family: 'Raleway-Medium';
+                        text-transform: uppercase;
+                        color: black;
+                        -webkit-transition: all 0.25s ease-in-out;
+                        -moz-transition: all 0.25s ease-in-out;
+                        -ms-transition: all 0.25s ease-in-out;
+                        -o-transition: all 0.25s ease-in-out;
+                        transition: all 0.25s ease-in-out;
+
+                        &:hover{
+                            color: $chery-red;
+                        }
+                    }
+
+                    &.active span{
+                        color: $chery-red;
+                    }
+                }
+            }
+        }
+    }
+}
